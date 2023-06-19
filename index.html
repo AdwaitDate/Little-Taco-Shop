@@ -2,139 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="The offical website for The Little Taco Shop, initial-scale=1.0">
-    <title>The Little Taco Shop</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="The offical website for The Little Taco Shop, initial-scale=1.0" />
+  <title>The Little Taco Shop</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1> Welcome to The Little Taco Shop</h1>
+  <div class="top">
+    <!-- <div class="left"></div>
+    <div class="content"> -->
+      <header>
+        <h1>Welcome to The Little Taco Shop</h1>
+    </div>
+    <hr />
+    <div class="nav2f">
+
+      <nav>
+        <ul>
+          <li style="float: right">
+            <a class="active" href="#home">Home</a>
+          </li>
+          
+          <li>
+            <a href="#About">
+              About <abbr title="The Little Taco Shop">LTS </abbr></a>
+            </li>
+            
+            <li>
+              <a href="#Menu"> Our Menu </a>
+            </li>
+            
+            <li>
+              <a href="hours.html"> Store Hours </a>
+            </li>
+            
+        <li>
+          <a href="contact.html">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="tacos_and_drink_400x267.png" alt="tacos_and_drink_" title="We love Tacos and Drinks!" width="400"
+      height="267" class="center" />
+      <figcaption><br /><strong>Tacos And Drinks!</strong></figcaption>
+    </figure>
+    <hr />
+    <main>
+      <article id="About">
+        <h2>About <abbr title="Little Taco Shop">LTS </abbr></h2>
+        <p>
+          <abbr title="Little Taco Shop">LTS </abbr> was founded in
+          <time datetime="2022"></time>. Our shop was built with
+          <strong>Love For Tacos</strong>🌮🌮🌮. We hope our Little shop
+          brings something unique and interesting to our town. <br><br>
+          Adwait Date, the visionary founder of The Little Taco Shop, brings a wealth of culinary expertise and a
+          passion for creating unique flavors. His innovative recipes have revolutionized the taco scene, delighting
+          customers with every bite.
+        </p>
         <hr>
-        <nav>
-            <ul>
-                <li style="float: right;">
-                    <a class="active" href="#home">Home</a>
-                </li>
+        <aside>
+          <h3>Taco Trivia</h3>
+          <details>
+            <summary>When did Tacos First Came in United States</summary>
+            <p>
+              The Taco was first introduced to the United States in
+              <time datetime="1905"></time>. Mexican migrants were coming in
+              to work on railroads and other jobs and started to bring their
+              delicious food with them. Tacos were essentially a street food
+              at this time since they were highly portable and cheap.(source:
+              <cite><a
+                  href="https://www.twistedtaco.com/the-history-of-the-taco#:~:text=The%20Taco%20was%20first%20introduced,were%20highly%20portable%20and%20cheap">twistedtaco</a></cite>)
+            </p>
+          </details>
+          <br>
+          <details>  
+            <summary>What is the world record for the largest taco ever made?</summary>
+            <p>The largest taco ever made weighed approximately 12,785 pounds (5,799 kg) and measured 246 feet (75
+              meters) long. It was created in Mexicali, Mexico, in 2003.</p>
+            </details>
+            <br>
+            <details>
+              <summary>Question: Which country consumes the most tacos per capita?</summary>
+              <p>The country that consumes the most tacos per capita is the United States. Americans have embraced tacos
+              as a popular and versatile food, enjoying various types of fillings and flavors.</p>
+            </details>
+          </aside>
+      </article>
+      <hr />
+      <article id="Menu">
+        <h2>Our Menu</h2>
+        <!-- LEFT TABLE STARTS FROM HERE -->
+        <div class="table-container">
+          <table>
+            <caption>
+              Our Tacos
+            </caption>
+            <thead>
+              <th>Tacos</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Price</th>
+            </thead>
+            <tbody>
+              <!-- CRUNCHY STARTS HERE  -->
+              <tr>
+                <th scope="row" rowspan="3">Crunchy</th>
+                <td>1</td>
+                <td>$1.50</td>
+              </tr>
+              
+              <tr>
+                <td>2</td>
+                <td>$2.50</td>
+              </tr>
+              
+              <tr>
+                <td>3</td>
+                <td>$3.25</td>
+              </tr>
+              
+              <!-- CRUNCHY ENDS HERE // SOFT STARTS HERE  -->
+              
+              <tr>
+                <th scope="row" rowspan="3">soft</th>
+                <td>1</td>
+                <td>$2.00</td>
+              </tr>
+              
+              <tr>
+                <td>2</td>
+                <td>$3.23</td>
+              </tr>
+              
+              <tr>
+                <td>3</td>
+                <td>$4.50</td>
+              </tr>
+              
+              <!-- SOFT ENDS HERE  -->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Chips &amp; salsa $2</td>
+              </tr>
+            </tfoot>
+          </table>
+          <!-- LEFT TABLE ENDS HERE  -->
+          
+          <!-- RIGHT TABLE STARTS FROM HERE -->
+          
+          <table>
+            <caption>Our Drinks</caption>
+            
+            <thead>
+              <th>Type</th>
+              <th>Brand</th>
+              <th>Price</th>
+            </thead>
+            
+            <tbody>
+              <!-- >Non Alcoholic Section Starts Here  -->
+              
+              <tr>
+                <th scope="row" rowspan="3">Non<br>Alcoholic</th>
+                <td>Coolberg </td>
+                <td>$2.15</td>
+              </tr>
 
-                <li>
-                    <a href="#About">  About <abbr title="The Little Taco Shop">LTS  </abbr></a>
-                </li>
-                
-                <li>
-                    <a href="#Menu">  Our Menu  </a>
-                </li>
-                
-                <li>
-                    <a href="hours.html">  Store Hours </a>
-                </li>
-                
-                <li>
-                    <a href="contact.html">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-        <figure>
-            <img src="tacos_and_drink_400x267.png" alt="tacos_and_drink_" title="We love Tacos and Drinks!"
-                width="400" height="267" 
-                class="center">
-            <figcaption><br><strong>Tacos And Drinks!</strong></figcaption>
-        </figure>
-        <hr>
-        <main>
-            <article id="About">
-                <h2> About <abbr title="Little Taco Shop">LTS </abbr></h2>
-                <p><abbr title="Little Taco Shop">LTS </abbr> was founded in <time datetime="2022"></time>. Our shop was
-                    built with <strong>Love For Tacos</strong>🌮🌮🌮. We hope our Little shop brings something unique
-                    and
-                    interesting to our town.</p>
-                <aside>
-                    <h3> Taco Trivia</h3>
-                    <details>
-                        <summary>
-                            When did Tacos First Came in United States</summary>
-                        <p>The Taco was first introduced to the United States in <time datetime="1905"></time>.
-                            Mexican
-                            migrants were coming in
-                            to work on railroads and other jobs and started to bring their delicious food with them.
-                            Tacos were essentially a street food at this time since they were highly portable and
-                            cheap.(source:
-                            <cite><a
-                                    href="https://www.twistedtaco.com/the-history-of-the-taco#:~:text=The%20Taco%20was%20first%20introduced,were%20highly%20portable%20and%20cheap">twistedtaco</a></cite>)
-                        </p>
-                    </details>
+              <tr>
+                <td>Crofters</td>
+                <td>$2.00</td>
+              </tr>
+              
+              <tr>
+                <td>Barbican</td>
+                <td>$2.00</td>
+              </tr>
+              
+              <!-- >Non Alcoholic Section Ends Here  -->
+              <!-- >Alcoholic Section Starts Here  -->
+              
+              <tr>
+                <th scope="row" rowspan="3">Alcoholic</th>
+                <td>Bira</td>
+                <td>$2.15</td>
+              </tr>
+              
+              <tr>
+                <td>Corona</td>
+                <td>$4.00</td>
+              </tr>
+              
+              <tr>
+                <td>Ultra</td>
+                <td>$3.00</td>
+              </tr>
+              
+              <!-- >Alcoholic Section Ends Here  -->
+              <!-- RIGHT TABLE ENDS HERE -->
+              
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3"> Buy 1 Get 1!</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </article>
+      <br /><br><br>
+      
+      <p><a href="#">Back to top</a></p>
+    </main>
 
-                </aside>
-            </article>
-            <hr>
-            <article id="Menu">
-                <h2>Our Menu</h2>
-                <table>
-                    <caption> Our Tacos</caption>
-                    <thead>
-                        <th>Tacos</th>
-                        <th scope="col">Qty</th>
-                        <th scope="col">Price</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" rowspan="3">Crunchy</th>
-                            <td>1</td>
-                            <td>$1.50</td>
-                        <tr>
-                            <td>2</td>
-                            <td>$2.50</td>
-
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>$3.25</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" rowspan="3">soft</th>
-                            <td>1</td>
-                            <td>$2.00</td>
-                        <tr>
-                            <td>2</td>
-                            <td>$3.23</td>
-
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>$4.50</td>
-
-                        </tr>
-
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">Chips &amp; salsa $2</td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <br>
-                <p> <a href="#">Back to top</a></p>
-
-
-            </article>
-        </main>
-        
-        <hr>
-        <br>
-            <footer>
-                <p> Copyright &copy; The little Taco Shop</p>
-            </footer>
-        <br>       
-
-        
-
-
-    </header>
-
+    <hr />
+    <br />
+    <footer>
+      <br><br>
+      <p>Copyright &copy; The little Taco Shop <br>Created by Adwait Date</p>
+    </footer>
+    <br />
+  </header>
+</div>
 </body>
 
 </html>
